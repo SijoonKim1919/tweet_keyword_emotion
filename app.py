@@ -16,7 +16,7 @@ def load_wordmodel(model):
     
     wordmodel=models.KeyedVectors.load_word2vec_format(model, binary=True)
     return wordmodel
-wordmodel=load_wordmodel('GoogleNews-vectors-negative300.bin.gz')
+wordmodel=load_wordmodel('https://s3.amazonaws.com/dl4j-distribution/GoogleNews-vectors-negative300.bin.gz')
 def word_to_num(w):
  
   p=word_tokenize(w)
